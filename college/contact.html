@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="w3.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="dropdown.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="social.css">
+	</head>
+ <body>
+<nav class="topnav" id="myTopnav">
+<img class="logo" src="img/logo2.png">
+<a href="index.html">Home</a>
+<a href="gallery.html">Gallery</a>
+<a href="about.html">About Us</a>
+<a class="active" href="contact.html">Contact</a>
+<a href="external.html">External Links</a>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navBar()">&#9776;</a>
+</nav>
+
+<div class="w3-container w3-padding w3-responsive">
+<div id="contactformdiv" class="w3-half">
+<form id="contactform" action='submitmail.php' method='POST' target=contact.html>
+<p>First Name:<br> <input type='text' id="firstname" name='firstname' required /></p>
+<p>Last name:<br> <input type='text' id="lastname" name='lastname' required /></p>
+<p>Email:<br> <input type='email' id="email" name='email' required /></p>
+<p>Message:<br> <input type='text' id="message" name='message' required /></p>
+<button class="w3-button w3-black" input onclick="clearSubmit()" />Submit</button>
+</form> </div>
+<div class="w3-half">
+<p>
+You can also send us mail to:<br>
+Carter Angelo Art Gallery<br>
+Unit 43<br>
+The Nene Centre<br>
+Freehold Street<br>
+Northampton.<br>
+NN2 6EW<br>
+Tel: 01604 745771
+</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d726.2001635124366!2d-0.8960971445758754!3d52.249986612703424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48770ec0f24095d9%3A0xc9d7e948b0e1f65!2sFreehold+St%2C+Northampton+NN2+6EW!5e0!3m2!1sen!2suk!4v1511186209439" width="600" height="300" frameborder="1" style="border:1; max-width:95%" allowfullscreen></iframe>
+</div></div>
+<script>
+function navBar() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script>
+function clearSubmit() {
+  if (confirm("Are you sure you want to submit the form?")) {
+    document.getElementById("contactform").submit();
+  }
+  return false;
+}
+</script>
+<br><br>
+<footer class="footer">
+    <div align="left">
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+<a href="https://www.flickr.com" class="fa fa-flickr"></a>
+<a href="https://www.vimeo.com" class="fa fa-vimeo"></a>
+</div></footer>
+ </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="w3.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="dropdown.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="social.css">
+	</head>
+ <body>
+<nav class="topnav" id="myTopnav">
+<img class="logo" src="img/logo2.png">
+<a href="index.html">Home</a>
+<a class="active" href="gallery.html">Gallery</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+<a href="external.html">External Links</a>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navBar()">&#9776;</a>
+</nav>
+
+<div class="w3-container w3-padding w3-responsive">
+<div class="gallery w3-padding w3-container" style="max-width:95%" align="center">
+	<br />
+
+	<div class="thumbnails">
+	    <img onmouseover="getElementById('preview').src=getElementById('img1').src" id="img1" src="img/img1.jpg" alt="" />
+		<img onmouseover="getElementById('preview').src=getElementById('img2').src" id="img2" src="img/img2.jpg" alt=""/>
+		<img onmouseover="getElementById('preview').src=getElementById('img3').src" id="img3" src="img/img3.jpg" alt=""/>
+		<img onmouseover="getElementById('preview').src=getElementById('img4').src" id="img4" src="img/img4.jpg" alt=""/>
+		<img onmouseover="getElementById('preview').src=getElementById('img5').src" id="img5" src="img/img5.jpg" alt=""/>
+	</div>
+	<br/>
+
+	<div class="preview" align="center">
+	    <img style="max-width:95%"id="preview" src="img/img1.jpg" alt="" />
+	</div>
+
+</div>
+<div class="w3-padding" align=center>
+    <div class="w3-center"><img style="border-style: solid; max-width:95%" src="img/img1.jpg"></div>
+    <p><u>&pound;250.00</u></p>
+    <form action='http://www.romancart.com/cart.asp' method='post' target="_blank">
+    <input type='hidden' name='storeid' value='66109'>
+    <input type='hidden' name='itemcode' value='00001'>
+     <button class="w3-button w3-black" input type='submit' />Add to cart</button>
+    </form><br><br>
+    
+    <div class="w3-center"><img style="border-style: solid; max-width:95%" src="img/img2.jpg"></div>
+    <p><u>&pound;300.00</u></p>
+    <form action='http://www.romancart.com/cart.asp' method='post' target="_blank">
+    <input type='hidden' name='storeid' value='66109'>
+    <input type='hidden' name='itemcode' value='00002'>
+     <button class="w3-button w3-black" input type='submit' />Add to cart</button>
+    </form><br><br>
+
+    <div class="w3-center"><img style="border-style: solid; max-width:95%" src="img/img3.jpg"></div>
+    <p><u>&pound;400.00</u></p>
+    <form action='http://www.romancart.com/cart.asp' method='post' target="_blank">
+    <input type='hidden' name='storeid' value='66109'>
+    <input type='hidden' name='itemcode' value='00003'>
+     <button class="w3-button w3-black" input type='submit' />Add to cart</button>
+    </form><br><br>
+
+    <div class="w3-center"><img style="border-style: solid; max-width:95%" src="img/img4.jpg"></div>
+    <p><u>&pound;250.00</u></p>
+    <form action='http://www.romancart.com/cart.asp' method='post' target="_blank">
+    <input type='hidden' name='storeid' value='66109'>
+    <input type='hidden' name='itemcode' value='00004'>
+     <button class="w3-button w3-black" input type='submit' />Add to cart</button>
+    </form><br><br>
+
+    <div class="w3-center"><img style="border-style: solid; max-width:95%" src="img/img5.jpg"></div>
+    <p><u>&pound;350.00</u></p>
+    <form action='http://www.romancart.com/cart.asp' method='post' target="_blank">
+    <input type='hidden' name='storeid' value='66109'>
+    <input type='hidden' name='itemcode' value='00005'>
+     <button class="w3-button w3-black" input type='submit' />Add to cart</button>
+    </form>
+
+</div>
+</div>
+
+<script>
+function navBar() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<br><br>
+<footer class="footer">
+    <div align="left">
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+<a href="https://www.flickr.com" class="fa fa-flickr"></a>
+<a href="https://www.vimeo.com" class="fa fa-vimeo"></a>
+<a href="/staff.php" class="fa fa-key"></a>
+</div></footer>
+</body>
+</html>

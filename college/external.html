@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="w3.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="dropdown.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="social.css">
+	</head>
+<body> 
+<nav class="topnav" id="myTopnav">
+<img class="logo" src="img/logo2.png">
+<a href="index.html">Home</a>
+<a href="gallery.html">Gallery</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+<a class="active "href="external.html">External Links</a>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navBar()">&#9776;</a>
+</nav>
+<h1>External Sites would be linked here</h1>
+<p><a href="https://www.google.com">Sample Site 1 (Google)<a><br><a href="https://en.wikipedia.org/">Sample Site 2 (Wikipedia)<p>
+</div>
+<script>
+function navBar() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<footer class="footer">
+    <div align="left">
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+<a href="https://www.flickr.com" class="fa fa-flickr"></a>
+<a href="https://www.vimeo.com" class="fa fa-vimeo"></a>
+<a href="/staff.php" class="fa fa-key"></a>
+</div></footer>
+	</body>
+</html>
