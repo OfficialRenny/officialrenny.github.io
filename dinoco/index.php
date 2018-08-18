@@ -25,8 +25,8 @@
 					<div class="col-md-6">
 						<form action="output.php" method="POST">
 						<div class="form-group">
-						  <label for="dealership">Dealership</label>
-							 <select name="dealership">
+						  <label for="dealership">Dealership</label><br>
+							 <select name="dealership" class="form-control">
 								 <option value="exotics" class="form-control" id="exotics" name="exotics" >Dinoco Exotics</option>
 								 <option value="imports" class="form-control" id="imports" name="imports" >Dinoco Imports</option>
 							</select> 
