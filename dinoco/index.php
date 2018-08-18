@@ -78,7 +78,7 @@
 						<div class="page-header">
 							<img src="https://i.imgur.com/CZDuXox.png" class="img-responsive">
 						</div>
-						<p>This tool allows you to auto create invoices, it is an upgraded version of my verious tool made for the faction.</p>
+						<p>This tool allows you to auto create invoices, it is an upgraded version of my previous tool made for the faction.<br>Modified by Renny yeet.<br> Changes I've made:<br>- Added dropdown for the two dealerships<br>- Fixed some typos</p>
 						</center>
 					</div>					
 				</div>
