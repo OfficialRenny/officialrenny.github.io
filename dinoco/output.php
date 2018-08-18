@@ -44,11 +44,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			if ($dealership == 'exotics'){
 				echo "
 				[center][img=https://i.imgur.com/2GgqLdP.png][/center]
-				"
+				";
 			} else {
 				echo "
 				[center][img=https://i.imgur.com/CZDuXox.png][/center]
-				"
+				";
 			}
 			
 			if ($status == 'Denied'){
